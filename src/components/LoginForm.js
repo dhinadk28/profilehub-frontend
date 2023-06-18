@@ -125,7 +125,6 @@ const LoginForm = ({ setUser, notify, isDarkMode }) => {
           setError={setError}
         />
       )}
-      <DemoCredsInfo />
     </Segment>
   );
 };
