@@ -150,6 +150,7 @@ const RegisterForm = ({ setUser, notify, isDarkMode }) => {
         </Header>
       </Form>
       {error && <FormError message={error} setError={setError} />}
+      <DemoCredsInfo />
     </Segment>
   );
 };
