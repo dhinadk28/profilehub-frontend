@@ -126,14 +126,13 @@ const RegisterForm = ({ setUser, notify, isDarkMode }) => {
             }
           }
         /> */}
-
+            <br></br>
         <Button
-          animated="vertical"
           color="teal"
           icon
-          
+          labelPosition="center"
           type="submit"
-          floated="right"
+          
           loading={isLoading}
           size={isMobile ? 'small' : 'large'}
           fluid={isMobile}
