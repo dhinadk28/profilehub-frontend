@@ -89,8 +89,7 @@ const RegisterForm = ({ setUser, notify, isDarkMode }) => {
           name="email"
           value={email}
           onChange={handleOnChange}
-          icon="at"
-          iconPosition="left"
+          
         />
         <Form.Input
           required
@@ -100,8 +99,7 @@ const RegisterForm = ({ setUser, notify, isDarkMode }) => {
           name="password"
           value={password}
           onChange={handleOnChange}
-          icon="lock"
-          iconPosition="left"
+          
           action={
             password !== '' && {
               icon: showPass ? 'eye slash' : 'eye',
@@ -116,8 +114,7 @@ const RegisterForm = ({ setUser, notify, isDarkMode }) => {
           type={showConfirmPass ? 'text' : 'password'}
           value={confirmPassword}
           onChange={({ target }) => setConfirmPassword(target.value)}
-          icon="lock"
-          iconPosition="left"
+          
           action={
             confirmPassword !== '' && {
               icon: showConfirmPass ? 'eye slash' : 'eye',
