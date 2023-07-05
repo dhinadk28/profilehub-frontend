@@ -122,7 +122,7 @@ const RegisterForm = ({ setUser, notify, isDarkMode }) => {
             }
           }
         />
-            <br></br>
+           
         <Button
           color="teal"
           icon
