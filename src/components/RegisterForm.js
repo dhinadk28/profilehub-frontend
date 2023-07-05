@@ -131,7 +131,7 @@ const RegisterForm = ({ setUser, notify, isDarkMode }) => {
           animated="vertical"
           color="teal"
           icon
-          labelPosition="left"
+          
           type="submit"
           floated="right"
           loading={isLoading}
