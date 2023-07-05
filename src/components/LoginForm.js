@@ -76,7 +76,7 @@ const LoginForm = ({ setUser, notify, isDarkMode }) => {
           onChange={handleOnChange}
           icon="at"
           iconPosition="left"
-        /><br></br>
+        />
         <Form.Input
           required
           placeholder="Password must have minimum characters of 6."
@@ -125,6 +125,7 @@ const LoginForm = ({ setUser, notify, isDarkMode }) => {
           setError={setError}
         />
       )}
+      <DemoCredsInfo />
     </Segment>
   );
 };
