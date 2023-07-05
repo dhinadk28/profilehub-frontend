@@ -84,7 +84,7 @@ const LoginForm = ({ setUser, notify, isDarkMode }) => {
           name="password"
           value={password}
           onChange={handleOnChange}
-          
+         
           action={
             password !== '' && {
               icon: showPass ? 'eye slash' : 'eye',
