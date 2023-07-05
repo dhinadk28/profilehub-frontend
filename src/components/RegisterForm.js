@@ -110,9 +110,9 @@ const RegisterForm = ({ setUser, notify, isDarkMode }) => {
             }
           }
         />
-        {/* <Form.Input
+        <Form.Input
           required
-          placeholder="Confirm Password"
+          
           label="Confirm Password"
           type={showConfirmPass ? 'text' : 'password'}
           value={confirmPassword}
@@ -125,12 +125,12 @@ const RegisterForm = ({ setUser, notify, isDarkMode }) => {
               onClick: () => setShowConfirmPass(!showConfirmPass),
             }
           }
-        /> */}
+        />
             <br></br>
         <Button
           color="teal"
           icon
-          labelPosition="center"
+          // labelPosition="center"
           type="submit"
           
           loading={isLoading}
@@ -140,12 +140,27 @@ const RegisterForm = ({ setUser, notify, isDarkMode }) => {
           {/* <Icon name="signup" /> */}
           Register
         </Button>
+        {/* <Button
+          color="teal"
+          icon
+          // labelPosition="center"
+          type="submit"
+          
+          loading={isLoading}
+          size={isMobile ? 'small' : 'large'}
+          fluid={isMobile}
+          
+          
+        >
+          
+          Login
+        </Button> */}
         <Header
           as="h4"
           textAlign={isMobile ? 'center' : 'left'}
           className="login-reg-bottom-text"
         >
-          Already have an account? <Link to="/login">Login.</Link>
+          <Link to="/login">Login.</Link>
         </Header>
       </Form>
       {error && <FormError message={error} setError={setError} />}
