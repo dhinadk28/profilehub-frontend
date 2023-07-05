@@ -110,7 +110,7 @@ const RegisterForm = ({ setUser, notify, isDarkMode }) => {
             }
           }
         />
-        <Form.Input
+        {/* <Form.Input
           required
           placeholder="Confirm Password"
           label="Confirm Password"
@@ -125,7 +125,7 @@ const RegisterForm = ({ setUser, notify, isDarkMode }) => {
               onClick: () => setShowConfirmPass(!showConfirmPass),
             }
           }
-        />
+        /> */}
 
         <Button
           animated="vertical"
