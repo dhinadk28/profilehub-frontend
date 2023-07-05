@@ -138,7 +138,7 @@ const RegisterForm = ({ setUser, notify, isDarkMode }) => {
           size={isMobile ? 'small' : 'large'}
           fluid={isMobile}
         >
-          <Icon name="signup" />
+          {/* <Icon name="signup" /> */}
           Register
         </Button>
         <Header
