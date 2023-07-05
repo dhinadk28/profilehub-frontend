@@ -73,14 +73,13 @@ const RegisterForm = ({ setUser, notify, isDarkMode }) => {
       >
         <Form.Input
           required
-          placeholder="For ex. Ben Awad"
+          placeholder="username"
           label="Dispay Name"
           type="text"
           name="displayName"
           value={displayName}
           onChange={handleOnChange}
-          icon="user"
-          iconPosition="left"
+         
         />
         <Form.Input
           required
