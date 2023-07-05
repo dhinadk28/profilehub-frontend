@@ -68,25 +68,23 @@ const LoginForm = ({ setUser, notify, isDarkMode }) => {
       >
         <Form.Input
           required
-          placeholder="For ex. abc@example.com"
+          placeholder="email"
           label="Email"
           type="email"
           name="email"
           value={email}
           onChange={handleOnChange}
-          icon="at"
-          iconPosition="left"
+         
         />
         <Form.Input
           required
-          placeholder="Password must have minimum characters of 6."
+          placeholder="Min 6 Char"
           label="Password"
           type={showPass ? 'text' : 'password'}
           name="password"
           value={password}
           onChange={handleOnChange}
-          icon="lock"
-          iconPosition="left"
+          
           action={
             password !== '' && {
               icon: showPass ? 'eye slash' : 'eye',
@@ -109,13 +107,7 @@ const LoginForm = ({ setUser, notify, isDarkMode }) => {
           <Icon name="sign-in" />
           Login
         </Button>
-        <Header
-          as="h4"
-          textAlign={isMobile ? 'center' : 'left'}
-          className="login-reg-bottom-text"
-        >
-          Don't have an account? <Link to="/register">Register.</Link>
-        </Header>
+        
       </Form>
       {error && (
         <FormError

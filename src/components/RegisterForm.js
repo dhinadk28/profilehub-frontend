@@ -151,13 +151,7 @@ const RegisterForm = ({ setUser, notify, isDarkMode }) => {
           
           Login
         </Button> */}
-        <Header
-          as="h4"
-          textAlign={isMobile ? 'center' : 'left'}
-          className="login-reg-bottom-text"
-        >
-          <Link to="/login">Login.</Link>
-        </Header>
+        
       </Form>
       {error && <FormError message={error} setError={setError} />}
       <DemoCredsInfo />
