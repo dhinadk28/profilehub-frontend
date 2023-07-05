@@ -83,7 +83,7 @@ const RegisterForm = ({ setUser, notify, isDarkMode }) => {
         />
         <Form.Input
           required
-          placeholder="For ex. abc@example.com"
+          placeholder="email"
           label="Email"
           type="email"
           name="email"
@@ -93,7 +93,7 @@ const RegisterForm = ({ setUser, notify, isDarkMode }) => {
         />
         <Form.Input
           required
-          placeholder="Password must have minimum characters of 6."
+          placeholder="Min 6 char"
           label="Password"
           type={showPass ? 'text' : 'password'}
           name="password"
